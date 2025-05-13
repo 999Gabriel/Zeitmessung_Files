@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="900.0"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="swp.com.zeitmessungfilewrite.BenchmarkController">
+    <top>
+        <VBox spacing="15.0" BorderPane.alignment="CENTER">
+            <HBox styleClass="header" alignment="CENTER_LEFT" spacing="20">
+                <VBox>
+                    <Label styleClass="header-title" text="File Reading Benchmark" />
+                    <Label styleClass="header-subtitle" text="Compare performance of different file reading methods" />
+                </VBox>
+            </HBox>
+
+            <VBox styleClass="content-area" spacing="15">
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Button fx:id="selectFileButton" text="Select File" onAction="#onSelectFileButtonClick" />
+                    <Button fx:id="startBenchmarkButton" text="Run Benchmark" onAction="#onStartBenchmarkButtonClick" />
+                    <Button fx:id="runScalabilityTestButton" text="Run Scalability Test" />
+                    <Region HBox.hgrow="ALWAYS" />
+                    <Label fx:id="filePathLabel" styleClass="file-path" text="No file selected" />
+                </HBox>
+
+                <ProgressBar fx:id="progressBar" progress="0.0" maxWidth="Infinity" />
+            </VBox>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox styleClass="content-area" spacing="15" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+
+            <Label styleClass="result-title" text="Benchmark Results" />
+
+            <HBox spacing="15">
+                <VBox styleClass="result-card" HBox.hgrow="ALWAYS">
+                    <Label styleClass="result-title" text="BufferedReader" />
+                    <HBox alignment="BASELINE_LEFT">
+                        <Label fx:id="bufferedReaderTimeLabel" styleClass="result-value" text="--" />
+                        <Label styleClass="result-unit" text=" ms" />
+                    </HBox>
+                </VBox>
+
+                <VBox styleClass="result-card" HBox.hgrow="ALWAYS">
+                    <Label styleClass="result-title" text="Files.readAllBytes" />
+                    <HBox alignment="BASELINE_LEFT">
+                        <Label fx:id="readAllBytesTimeLabel" styleClass="result-value" text="--" />
+                        <Label styleClass="result-unit" text=" ms" />
+                    </HBox>
+                </VBox>
+
+                <VBox styleClass="result-card" HBox.hgrow="ALWAYS">
+                    <Label styleClass="result-title" text="Files.readString" />
+                    <HBox alignment="BASELINE_LEFT">
+                        <Label fx:id="readStringTimeLabel" styleClass="result-value" text="--" />
+                        <Label styleClass="result-unit" text=" ms" />
+                    </HBox>
+                </VBox>
+            </HBox>
+
+            <HBox spacing="15">
+                <VBox styleClass="result-card" HBox.hgrow="ALWAYS">
+                    <Label styleClass="result-title" text="FileChannel" />
+                    <HBox alignment="BASELINE_LEFT">
+                        <Label fx:id="fileChannelTimeLabel" styleClass="result-value" text="--" />
+                        <Label styleClass="result-unit" text=" ms" />
+                    </HBox>
+                </VBox>
+
+                <VBox styleClass="result-card" HBox.hgrow="ALWAYS">
+                    <Label styleClass="result-title" text="Files.lines" />
+                    <HBox alignment="BASELINE_LEFT">
+                        <Label fx:id="filesLinesTimeLabel" styleClass="result-value" text="--" />
+                        <Label styleClass="result-unit" text=" ms" />
+                    </HBox>
+                </VBox>
+
+                <VBox styleClass="result-card" HBox.hgrow="ALWAYS">
+                    <Label styleClass="result-title" text="File Size" />
+                    <HBox alignment="BASELINE_LEFT">
+                        <Label fx:id="fileSizeLabel" styleClass="result-value" text="--" />
+                        <Label styleClass="result-unit" text=" MB" />
+                    </HBox>
+                </VBox>
+            </HBox>
+
+            <TableView fx:id="resultTable" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="methodColumn" prefWidth="200.0" text="Method" />
+                    <TableColumn fx:id="avgTimeColumn" prefWidth="150.0" text="Average Time (ms)" />
+                    <TableColumn fx:id="minTimeColumn" prefWidth="150.0" text="Min Time (ms)" />
+                    <TableColumn fx:id="maxTimeColumn" prefWidth="150.0" text="Max Time (ms)" />
+                </columns>
+            </TableView>
+
+            <BarChart fx:id="resultChart" animated="true" legendVisible="true" prefHeight="250.0" title="Reading Method Performance">
+                <xAxis>
+                    <CategoryAxis label="Method" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis label="Average Time (ms)" />
+                </yAxis>
+            </BarChart>
+        </VBox>
+    </center>
+
+    <bottom>
+        <VBox styleClass="content-area" spacing="10" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <Label styleClass="result-title" text="Log Output" />
+            <TextArea fx:id="logTextArea" editable="false" prefHeight="150.0" wrapText="true" VBox.vgrow="ALWAYS" />
+        </VBox>
+    </bottom>
+
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+</BorderPane>

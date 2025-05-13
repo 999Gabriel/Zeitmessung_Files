@@ -1,0 +1,77 @@
+2025-04-23 08:21:12 - File selected: /Users/gabriel/Developer/ZeitmessungFileWrite/test_file.txt
+2025-04-23 08:21:14 - Starting benchmark for method: BufferedReader
+2025-04-23 08:21:16 - Completed benchmark for BufferedReader: Avg=101.61ms, Min=68.28ms, Max=214.76ms
+2025-04-23 08:21:16 - Starting benchmark for method: Files.readAllBytes
+2025-04-23 08:21:17 - Completed benchmark for Files.readAllBytes: Avg=42.06ms, Min=38.91ms, Max=63.51ms
+2025-04-23 08:21:17 - Starting benchmark for method: Files.readString
+2025-04-23 08:21:19 - Completed benchmark for Files.readString: Avg=37.77ms, Min=35.61ms, Max=40.47ms
+2025-04-23 08:21:19 - Starting benchmark for method: FileChannel
+2025-04-23 08:21:20 - Completed benchmark for FileChannel: Avg=56.17ms, Min=44.40ms, Max=72.63ms
+2025-04-23 08:21:20 - Starting benchmark for method: Files.lines
+2025-04-23 08:21:22 - Completed benchmark for Files.lines: Avg=78.59ms, Min=63.29ms, Max=124.77ms
+2025-04-23 08:23:15 - File selected: /Users/gabriel/Developer/ZeitmessungFileWrite/test_file.txt
+2025-04-23 08:23:16 - Starting benchmark for method: BufferedReader
+2025-04-23 08:23:50 - Completed benchmark for BufferedReader: Avg=3255.04ms, Min=2446.40ms, Max=6276.78ms
+2025-04-23 08:23:50 - Starting benchmark for method: Files.readAllBytes
+2025-04-23 08:24:19 - Completed benchmark for Files.readAllBytes: Avg=2819.06ms, Min=2061.30ms, Max=3545.27ms
+2025-04-23 08:24:19 - Starting benchmark for method: Files.readString
+2025-04-23 08:24:38 - Completed benchmark for Files.readString: Avg=1810.75ms, Min=1436.55ms, Max=2366.66ms
+2025-04-23 08:24:38 - Starting benchmark for method: FileChannel
+2025-04-23 08:24:39 - Benchmark failed: Java heap space
+2025-04-23 08:26:00 - File selected: /Users/gabriel/Developer/ZeitmessungFileWrite/test_file.txt
+2025-04-23 08:26:02 - Starting benchmark for method: BufferedReader
+2025-04-23 08:26:15 - Completed benchmark for BufferedReader: Avg=1220.99ms, Min=863.13ms, Max=1849.69ms
+2025-04-23 08:26:15 - Starting benchmark for method: Files.readAllBytes
+2025-04-23 08:26:22 - Completed benchmark for Files.readAllBytes: Avg=555.51ms, Min=391.13ms, Max=1323.60ms
+2025-04-23 08:26:22 - Starting benchmark for method: Files.readString
+2025-04-23 08:26:28 - Completed benchmark for Files.readString: Avg=441.24ms, Min=365.02ms, Max=804.20ms
+2025-04-23 08:26:28 - Starting benchmark for method: FileChannel
+2025-04-23 08:26:28 - Benchmark failed: Java heap space
+2025-04-23 08:30:54 - File selected: /Users/gabriel/Developer/ZeitmessungFileWrite/test_file.txt
+2025-04-23 08:30:56 - Starting benchmark for method: BufferedReader
+2025-04-23 08:31:09 - Completed benchmark for BufferedReader: Avg=1219.34ms, Min=735.51ms, Max=2960.29ms
+2025-04-23 08:31:09 - Starting benchmark for method: Files.readAllBytes
+2025-04-23 08:31:17 - Completed benchmark for Files.readAllBytes: Avg=739.16ms, Min=392.18ms, Max=1362.14ms
+2025-04-23 08:31:17 - Starting benchmark for method: Files.readString
+2025-04-23 08:31:22 - Completed benchmark for Files.readString: Avg=418.70ms, Min=368.60ms, Max=611.59ms
+2025-04-23 08:31:22 - Starting benchmark for method: FileChannel
+2025-04-23 08:31:23 - Benchmark failed: Java heap space
+2025-04-23 08:31:48 - File selected: /Users/gabriel/Developer/ZeitmessungFileWrite/test_file.txt
+2025-04-23 08:31:49 - Starting benchmark for method: BufferedReader
+2025-04-23 08:31:58 - Completed benchmark for BufferedReader: Avg=788.20ms, Min=684.38ms, Max=1292.35ms
+2025-04-23 08:31:58 - Starting benchmark for method: Files.readAllBytes
+2025-04-23 08:32:04 - Completed benchmark for Files.readAllBytes: Avg=524.11ms, Min=390.44ms, Max=1235.86ms
+2025-04-23 08:32:04 - Starting benchmark for method: Files.readString
+2025-04-23 08:32:09 - Completed benchmark for Files.readString: Avg=411.36ms, Min=357.07ms, Max=720.91ms
+2025-04-23 08:32:09 - Starting benchmark for method: FileChannel
+2025-04-23 08:32:49 - Completed benchmark for FileChannel: Avg=3930.80ms, Min=2022.96ms, Max=5301.11ms
+2025-04-23 08:32:49 - Starting benchmark for method: Files.lines
+2025-04-23 08:33:01 - Completed benchmark for Files.lines: Avg=1063.81ms, Min=707.58ms, Max=1785.45ms
+2025-04-23 08:38:34 - File selected: /Users/gabriel/Developer/ZeitmessungFileWrite/2test_file.txt
+2025-04-23 08:38:36 - Starting benchmark for method: BufferedReader
+2025-04-23 08:39:26 - Completed benchmark for BufferedReader: Avg=4934.76ms, Min=4182.35ms, Max=5659.13ms
+2025-04-23 08:39:26 - Starting benchmark for method: Files.readAllBytes
+2025-04-23 08:39:55 - Completed benchmark for Files.readAllBytes: Avg=2771.71ms, Min=2190.28ms, Max=3641.49ms
+2025-04-23 08:39:55 - Starting benchmark for method: Files.readString
+2025-04-23 08:40:18 - Completed benchmark for Files.readString: Avg=2250.26ms, Min=1385.25ms, Max=5424.89ms
+2025-04-23 08:40:18 - Starting benchmark for method: FileChannel
+2025-04-23 08:40:28 - Benchmark failed: Java heap space
+2025-04-23 08:41:07 - File selected: /Users/gabriel/Developer/ZeitmessungFileWrite/2test_file.txt
+2025-04-23 08:41:08 - Starting benchmark for method: BufferedReader
+2025-04-23 08:42:01 - Completed benchmark for BufferedReader: Avg=5139.29ms, Min=3993.16ms, Max=7450.69ms
+2025-04-23 08:42:01 - Starting benchmark for method: Files.readAllBytes
+2025-04-23 08:42:43 - Completed benchmark for Files.readAllBytes: Avg=4073.07ms, Min=2524.17ms, Max=8353.99ms
+2025-04-23 08:42:43 - Starting benchmark for method: Files.readString
+2025-04-23 08:43:08 - Completed benchmark for Files.readString: Avg=2447.25ms, Min=1551.95ms, Max=5181.60ms
+2025-04-23 08:43:08 - Starting benchmark for method: FileChannel
+2025-04-23 19:17:40 - File selected: /Users/gabriel/Developer/ZeitmessungFileWrite/test_file.txt
+2025-04-23 19:17:42 - Starting benchmark for method: BufferedReader
+2025-04-23 19:17:57 - Completed benchmark for BufferedReader: Avg=1389.44ms, Min=699.39ms, Max=2107.99ms
+2025-04-23 19:17:57 - Starting benchmark for method: Files.readAllBytes
+2025-04-23 19:18:07 - Completed benchmark for Files.readAllBytes: Avg=859.99ms, Min=412.57ms, Max=1557.41ms
+2025-04-23 19:18:07 - Starting benchmark for method: Files.readString
+2025-04-23 19:18:12 - Completed benchmark for Files.readString: Avg=452.15ms, Min=358.89ms, Max=624.71ms
+2025-04-23 19:18:12 - Starting benchmark for method: FileChannel
+2025-04-23 19:18:51 - Completed benchmark for FileChannel: Avg=3737.88ms, Min=2594.40ms, Max=5130.65ms
+2025-04-23 19:18:51 - Starting benchmark for method: Files.lines
+2025-04-23 19:19:54 - Completed benchmark for Files.lines: Avg=6217.49ms, Min=1494.95ms, Max=28332.51ms

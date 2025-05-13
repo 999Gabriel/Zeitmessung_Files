@@ -1,0 +1,296 @@
+/* main-style.css */
+.root {
+    -fx-background-color: #f5f7fa;
+    -fx-font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    -fx-background-color: linear-gradient(to right, #4b6cb7, #182848);
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 3);
+}
+
+.header-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.header-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: rgba(255, 255, 255, 0.8);
+}
+
+/* Main content */
+.content-area {
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 1);
+    -fx-border-radius: 8px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #4b6cb7;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #5d7ec9;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.button:pressed {
+    -fx-background-color: #405aa9;
+}
+
+.button-secondary {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #333333;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+#selectFileButton {
+    -fx-background-color: #2c3e50;
+}
+
+#selectFileButton:hover {
+    -fx-background-color: #34495e;
+}
+
+#runScalabilityTestButton {
+    -fx-background-color: #27ae60;
+}
+
+#runScalabilityTestButton:hover {
+    -fx-background-color: #2ecc71;
+}
+
+/* Progress Bar */
+.progress-bar {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 4px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(to right, #4b6cb7, #182848);
+    -fx-background-radius: 4px;
+}
+
+.progress-bar .track {
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 4px;
+}
+
+/* Text Areas */
+.text-area {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-font-family: 'Consolas', 'Monaco', monospace;
+}
+
+.text-area .content {
+    -fx-background-color: #f8f9fa;
+}
+
+.text-area:focused {
+    -fx-border-color: #4b6cb7;
+}
+
+/* Log area */
+#logTextArea {
+    -fx-font-size: 13px;
+}
+
+#logTextArea .content {
+    -fx-background-color: #1e1e1e;
+}
+
+#logTextArea {
+    -fx-text-fill: #d4d4d4;
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #333333;
+}
+
+/* File path display */
+.file-path {
+    -fx-padding: 8px;
+    -fx-background-color: rgba(75, 108, 183, 0.1);
+    -fx-border-color: rgba(75, 108, 183, 0.3);
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-font-family: 'Consolas', 'Monaco', monospace;
+    -fx-font-size: 13px;
+}
+
+/* Result card styles */
+.result-card {
+    -fx-background-color: white;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 1);
+}
+
+.result-card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 8, 0, 0, 2);
+    -fx-border-color: #4b6cb7;
+}
+
+.result-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.result-value {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4b6cb7;
+}
+
+.result-unit {
+    -fx-font-size: 14px;
+    -fx-text-fill: #7f8c8d;
+}
+
+/* Chart styling */
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #e0e0e0;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: #e0e0e0;
+}
+
+.chart-series-line {
+    -fx-stroke-width: 2px;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #4b6cb7; }
+.default-color1.chart-series-line { -fx-stroke: #27ae60; }
+.default-color2.chart-series-line { -fx-stroke: #e67e22; }
+.default-color3.chart-series-line { -fx-stroke: #8e44ad; }
+.default-color4.chart-series-line { -fx-stroke: #c0392b; }
+
+.chart-legend {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-padding: 10px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 4px;
+}
+
+/* Table styling */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #4b6cb7;
+    -fx-background-radius: 4px 4px 0 0;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 35px;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #e0e0e0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-padding: 5px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f8f9fa;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #eaf2fd;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #4b6cb7;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+/* Bar Chart styling */
+.chart-bar {
+    -fx-bar-fill: #4b6cb7;
+}
+
+.default-color0.chart-bar { -fx-bar-fill: #4b6cb7; }
+.default-color1.chart-bar { -fx-bar-fill: #27ae60; }
+.default-color2.chart-bar { -fx-bar-fill: #e67e22; }
+.default-color3.chart-bar { -fx-bar-fill: #8e44ad; }
+.default-color4.chart-bar { -fx-bar-fill: #c0392b; }
+
+/* Split pane styling */
+.split-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: #e0e0e0;
+    -fx-padding: 0 1px 0 1px;
+}
+
+.split-pane:vertical > .split-pane-divider {
+    -fx-background-color: #e0e0e0;
+    -fx-padding: 1px 0 1px 0;
+}
+
+/* Animation styles */
+.animate-in {
+    -fx-opacity: 0;
+    -fx-translate-y: 20;
+}
+
+@keyframes fadeIn {
+    from {
+        -fx-opacity: 0;
+        -fx-translate-y: 20;
+    }
+    to {
+        -fx-opacity: 1;
+        -fx-translate-y: 0;
+    }
+}

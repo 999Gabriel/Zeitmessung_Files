@@ -36,3 +36,9 @@ build/
 
 ### Mac OS ###
 .DS_Storetest_file.txt
+
+# Create .gitignore if it doesn't exist
+echo "# Generated test files" > .gitignore
+echo "test_file.txt" >> .gitignore
+echo "benchmark_test_file.txt" >> .gitignore
+echo "*.txt" >> .gitignore
